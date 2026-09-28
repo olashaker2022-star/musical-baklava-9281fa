@@ -1,0 +1,54 @@
+@import "tailwindcss" source("../");
+
+@theme {
+  --color-hekaya-green: #285c4d;
+  --color-hekaya-green-dark: #1e463a;
+  --color-hekaya-green-light: #3a7161;
+  --color-hekaya-cream: #f8f3e8;
+  --color-hekaya-beige: #e8d8be;
+  --color-hekaya-gold: #b99a5b;
+  --color-hekaya-gold-light: #d4bd8c;
+  --color-hekaya-text: #24332d;
+  --color-hekaya-white: #ffffff;
+
+  --font-sans: "Tajawal", "Cairo", system-ui, sans-serif;
+  --font-display: "Cairo", "Tajawal", system-ui, sans-serif;
+  --font-quran: "Amiri", "Traditional Arabic", serif;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-hekaya-cream);
+  color: var(--color-hekaya-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-quran {
+  font-family: var(--font-quran);
+}
+
+.pattern-bg {
+  background-image: url("/.netlify/images?url=/img/pattern-geometric.png&w=420&fm=webp");
+  background-size: 420px 420px;
+  background-repeat: repeat;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
